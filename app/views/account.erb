@@ -8,7 +8,7 @@
   <body id="page-top">
     <% if(Helper.is_logged_in?) %>
       <h1>Welcome <%= Helper.current_user.username %></h1>
-      <p>your account balance is <%= Helper.current_user.balance %></p>
+      <p>your account balance is <%= Helper.current_user.balance %>.</p>
     <% end %>
   </body>
 </html>
