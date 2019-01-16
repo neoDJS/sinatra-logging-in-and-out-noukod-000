@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  require :username, :password, :balance
+  validates_presence_of  :username, :password, :balance
 end
