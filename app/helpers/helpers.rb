@@ -4,7 +4,8 @@ class Helpers
     User.find_by(session[:user_id])
   end
 
-  def self.is_logged_in?
+  def self.is_logged_in?(session)
+    session.keys.include?(:user_id)
   end
 
 end
